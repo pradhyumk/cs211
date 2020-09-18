@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char* argv[]) {
 	int total = 0, oddNum=0, evenNum=0, argInc = 1, n = 0;

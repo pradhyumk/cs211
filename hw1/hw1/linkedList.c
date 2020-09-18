@@ -7,6 +7,24 @@ struct Node {
 	struct Node *next;
 };
 
+void delete(struct Node* node) {
+	if(node == NULL)
+		return;
+
+	if (node->next == NULL) {
+		free(node);
+		node = NULL;
+		return;
+	} else {
+		delete(node->next);
+		node->next = NULL;
+	}
+	free(node);
+	node = NULL;
+
+	return;
+}
+
 int main(int argc, char* argv[]) {
 	char action;
 	int num;
@@ -43,16 +61,19 @@ int main(int argc, char* argv[]) {
 					temp->data = num;
 					temp->next = root;
 					root = temp;
+					temp = NULL;
 				} else if(ptr != NULL && prev != NULL) { // In between two elements
 					struct Node* temp = (struct Node*) malloc(sizeof(struct Node));
 					temp->data = num;
 					prev->next = temp;
 					temp->next = ptr;
+					temp = NULL;
 				} else if(ptr == NULL && prev != NULL) { // At the end of the list
 					struct Node* temp = (struct Node*) malloc(sizeof(struct Node));
 					temp->data = num;
 					temp->next = NULL;
 					prev->next = temp;
+					temp = NULL;
 				}
 			}
 
@@ -116,13 +137,20 @@ int main(int argc, char* argv[]) {
 	printf("\n");
 
 	// Clearing linked list
-	while(ptr != NULL) {
+	/* while(ptr != NULL) {
 		struct Node* temp;
 		temp = ptr;
 		ptr = ptr->next;
 		free(temp);
-	}
-	free(root);
-	free(prev);
-	free(ptr);
+	}*/
+
+	delete(root);
+
+	//free(root);
+	// free(prev);
+	//free(ptr);
+
+	root = NULL;
+	prev = NULL;
+	ptr = NULL;
 }

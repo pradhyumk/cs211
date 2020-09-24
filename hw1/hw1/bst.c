@@ -112,6 +112,11 @@ void clearTree(struct BSTNode *root) {
 
 int main(int argc, char* argv[]) {
 
+	if (argc == 1) {
+		printf("error\n");
+		exit(0);
+	}
+
 	char action;
 	int num;
 

@@ -9,6 +9,14 @@ int main(int argc, char* argv[]) {
 
 	// printf("argc: %d | argv: %d\n", argc, (sizeof(argv)/sizeof(argv[0])));
 
+
+	// If there are no parameters
+
+	if (argc == 1) {
+		printf("error\n");
+		exit(0);
+	}
+
 	while (argInc <= argc-1) {
 		int t = 0;
 		FILE* fp = fopen(argv[argInc], "r");

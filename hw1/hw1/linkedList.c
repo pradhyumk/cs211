@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #include <stdlib.h>
 
 struct Node {
@@ -26,6 +25,12 @@ void delete(struct Node* node) {
 }
 
 int main(int argc, char* argv[]) {
+
+	if (argc == 1) {
+		printf("error\n");
+		exit(0);
+	}
+
 	char action;
 	int num;
 	struct Node* root = NULL;

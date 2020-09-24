@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 #include <string.h>
 
 int main(int argc, char * argv[]) {
@@ -8,6 +8,11 @@ int main(int argc, char * argv[]) {
 	//printf("strlen argv[1]: %d\n", strlen(argv[1]));
 
 	//printf("First letter of argv[1]: %c\n", hello[0]);
+
+	if (argc == 1) {
+		printf("error\n");
+		exit(0);
+	}
 
 	int argCounter = 1;
 	int strCounter = 0;

@@ -23,7 +23,7 @@ Objective: To understand the concept and importance of bits and performing bit o
 Assigned: 05 October 2020  
 Due: 18 October 2020  
 
-## Program 4: Bomb Lab
+## Homework 4: Bomb Lab
 Objective: To understand the implementation and instructions in assembly language using a binary with multiple phases which the student has to diffuse. 
 
 Assigned: 19 October 2020  

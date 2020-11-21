@@ -27,7 +27,13 @@ Due: 18 October 2020
 Objective: To understand the implementation and instructions in assembly language using a binary with multiple phases which the student has to diffuse. 
 
 Assigned: 19 October 2020  
-Due: 1 November 2020    
+Due: 01 November 2020  
+
+## Homework 5: Assembly Interpretor
+Objective: To perform the instructions given in the simple assembly file.
+
+Assigned: 06 November 2020  
+Due: 21 November 2020  
 
 ## Original Assignment Authors
 [Rutgers University Department of Computer Science](https://www.cs.rutgers.edu/)  

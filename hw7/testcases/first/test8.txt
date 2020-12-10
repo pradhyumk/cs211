@@ -1,0 +1,6 @@
+INPUTVAR 2 A B
+OUTPUTVAR 2 X Y
+NOT A temp1
+NOT B temp2
+OR temp1 temp2 X
+NAND A B Y

@@ -1,0 +1,10 @@
+INPUTVAR 9 A B C D E F G H I
+OUTPUTVAR 1 X
+AND A B a
+AND C D b
+OR E F c
+OR G H d
+XOR a b e
+XOR c d f
+XOR e f g
+XOR I g X

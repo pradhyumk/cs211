@@ -51,20 +51,14 @@ void insertVal(char arg[], int val, struct info o[], int l, struct info **temp) 
 	int x = 0;
 
 	while(x < l) {
-		// printf("Checking the Output Array\n");
 		if (strcmp(o[x].cmd, arg) == 0) {
-			// printf("val: %d\n", val);
 			o[x].num = val;
-
 			return;
 		}
-
 		x++;
 	}
 
 	// Only drops down if variable was not found in the input array... Now checking temp vars
-	// printf("Variable name not found in Input Array, creating a temp variable...\n");
-
 
 	if (*temp == NULL) {
 		*temp = malloc(sizeof(struct info));
@@ -96,7 +90,6 @@ void insertVal(char arg[], int val, struct info o[], int l, struct info **temp) 
 	}
 
 	return;
-
 }
 
 
@@ -364,6 +357,7 @@ int main(int argc, char *argv[]) {
 		c++;
 	}
 
+	// Freeing temp variables linked list
 	delete(tempvars);
 
 }

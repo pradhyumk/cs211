@@ -46,7 +46,7 @@ Due: 03 December 2020
 ## Homework 7: Circuit Simulator
 Objective: Emulate a circuit using the directives in the input file.
 
-Assigned: 02 November 2020  
+Assigned: 02 December 2020  
 Due: 10 December 2020  
 
 ## Original Assignment Authors

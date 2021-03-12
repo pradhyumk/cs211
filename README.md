@@ -43,7 +43,7 @@ Objective: Simulate a cache which implements two replacement policies using a me
 Assigned: 20 November 2020  
 Due: 03 December 2020  
 
-## Homework 6: Circuit Simulator
+## Homework 7: Circuit Simulator
 Objective: Emulate a circuit using the directives in the input file.
 
 Assigned: 02 November 2020  
